@@ -1,0 +1,134 @@
+.produtos {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.titulos {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+.titulos h2 {
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 500;
+    color: black;
+}
+
+.titulos p {
+    font-size: 1.1rem;
+    color: #444;
+    margin-top: 25px;
+}
+
+.produto_img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin: 50px 0px;
+}
+
+.card_produto picture {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.card_produto picture img {
+    max-width: 100%;
+    height: 250px;
+    object-fit: contain;
+    transition: 0.3 ease-in-out;
+}
+
+.card_produto {
+    position: relative;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3 ease-in-out;
+    border: 0.5px solid transparent;
+}
+
+.card_produto:hover {
+    border: 1px solid #d1cbcb7e;
+    box-shadow: 0 10px 20px rgba(40, 40, 40, 0.25);
+}
+
+.card_produto h3 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: #222;
+}
+
+.card_produto .preco {
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-top: 20px;
+    color: hsl(0, 0%, 20%);
+}
+
+.card_produto .botao {
+    margin-top: 15px;
+    background: hsl(0, 70%, 50%);
+    color: #fff;
+    padding: 12px 25px;
+    /* border: 2px solid #000; */
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.3 ease;
+    border: none;
+}
+
+.card_produto .botao:hover {
+    background: hsl(0, 80%, 65%);
+    transform: scale(1.05);
+}
+
+.card_produto picture img:hover {
+    transform: scale(1.1);
+}
+
+.card_produto .selo {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding: 8px 10px;
+    border-radius: 10px;
+}
+
+.card_produto .selo {
+    background-color: hsl(288, 71%, 39%);
+    color: #fff;
+}
+
+/* Reponsividede */
+@media (max-width: 768px) {
+    .produto_img {
+        grid-template-columns: 1fr;
+    }
+
+    .titulos h2 {
+        font-size: 2rem;
+    }
+
+    .titulos p {
+        font-size: 1rem;
+    }
+
+    .card_produto picture img {
+        height: 150px;
+    }
+} 

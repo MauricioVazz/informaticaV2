@@ -5,11 +5,11 @@ export default function Topo() {
         <header>
             <div className={estilos.topo}>
                 <picture>
-                    <a href="#"><img src="./icone.png"></img></a>
+                    <a href=""><img src="./icone.png"></img></a>
                 </picture>
 
                 <nav>
-                    <a href="#">Produtos</a>
+                    <a href="#produto">Produtos</a>
                     <a href="#">Sobre</a>
                     <a href="#">Contato</a>
                 </nav>
